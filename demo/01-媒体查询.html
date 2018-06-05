@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            height: 1000px;
+            background-color: pink;
+        }
+        @media screen and (max-width: 768px) {
+            /*1.在超小屏设备的时候  768px以下  当前容器的宽度为100%  背景为蓝色*/
+            .container {
+                width: 100%;
+                background-color: blue;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            /*2.在小屏设备的时候 768px—992px  当前容器的宽度750px  背景为绿色*/
+            .container {
+                width: 750px;
+                background: green;
+            }
+        }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+            /*3.在中屏设备的时候  992px-1200px  当前容器的宽度为970px 背景为红色*/
+            .container {
+                width: 970px;
+                background: red;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            /*4.在大屏设备的时候 1200px以上  当前容器宽度1170px 背景为黄色*/
+            .container {
+                width: 1170px;
+                background: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container"></div>
+</body>
+</html>
